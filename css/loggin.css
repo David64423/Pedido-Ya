@@ -1,0 +1,60 @@
+:root{
+    --c1:#320000;
+    --c2:#5d2417;
+    --c3:#8d4925;
+    --c4:#c57d56;
+    --c5:#ffb48a;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--c2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/comidaRapida.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  red;
+    /*
+    background-image: url("../img/comida.jpg"); */
+    width: 30vw;
+    height: 50vh;
+
+}
+.nombresCampos{
+    color: black;
+    font-size: 3vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.formTexto{
+    border-radius: 25px;
+    width: 20vw;
+    height: 5vh;
+    padding-left: 5%;
+}
+
+#submit{
+    width: 8vw;
+    margin-top: 5vh;
+    height: 4vh;
+    border-radius: 40px;
+    margin-left: 0%;
+    cursor: pointer;
+}

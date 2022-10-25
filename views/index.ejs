@@ -25,7 +25,8 @@
 </head>
 
 <body>
-
+    
+ <!---Bara Superior--->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="z-index: 11">
         <div class="container">
             <ul class="px-0 mx-0">
@@ -51,9 +52,10 @@
             </div>
         </div>
     </nav>
-
+<!--Fin de la barra superior-->
     <a id="scrollToTop" class="btn"><i class="fas fa-caret-up"></i></a>
 
+<!---HOME ENVIOS A TODO EL PAIS -->
     <div class="container" style="height: 100vh; width: 132vw; display: flex; justify-content: center">
         <section id="homeSection" class="d-flex justify-content-center">
             <div class="row homeRow">
@@ -64,10 +66,19 @@
                         <br /> el pais
                     </h1>
                     <br />
+
+
+                    <!---boton de ordene ahora -->
+
+
                     <div class="homeBtnDiv">
                         <a href="#categorySection" class="btn homeBtn">Ordene Ahora</a>
                     </div>
                 </div>
+                     <!---boton de ordene ahora FIN -->
+
+                    <!---Hamburguesa GIGANTE-->
+
                 <div class="col-lg-6 homeImgCol">
                     <img class="homeImg" src="https://thumbs.dreamstime.com/b/hamburguesa-hamburguesa-o-cheeseburger-grande-aislado-en-un-fondo-negro-de-la-pizarra-mano-realista-del-estilo-de-la-historieta-94854858.jpg" alt="Burguer" />
                 </div>
@@ -75,8 +86,11 @@
         </section>
     </div>
 
+<!---FIN HOME ENVIOS A TODO EL PAIS -->
+
     <br />
 
+<!---Locales-->
     <section id="categorySection">
         <div class="container">
             <h1 style="text-align: center; margin: 50px auto">
@@ -89,6 +103,8 @@
               font-family: 'Roboto';
             "><b>Locales</b></span>
             </h1>
+            <!--- MCDONALD-->
+
             <div class="row gutters-40">
                 <div class="col-lg-4 col-sm-4 col-4">
                     <div class="product-box-layout4 momos">
@@ -100,6 +116,7 @@
                         </div>
                     </div>
                 </div>
+                        <!--- BURGER-->
 
                 <div class="col-lg-4 col-sm-4 col-4">
                     <div class="product-box-layout4 chinese">
@@ -111,7 +128,10 @@
                         </div>
                     </div>
                 </div>
+                                        <!---FIN  BURGER-->
 
+
+                        <!---CARTA KFC-->
 
         <div class="col-lg-4 col-sm-4 col-4">
           <div class="product-box-layout4 beverages">
@@ -127,6 +147,10 @@
                 </div>
 
             </div>
+                                    <!---FIN DE  KFC-->
+
+
+                        <!---MENU DE COMIDAS-->
 
             <div class="menuDiv">
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -138,6 +162,10 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
                             </div>
+
+                            
+                        <!---CHECK DE SELECCIONE MENU-->
+
                             <div class="modal-body">
                                 <div class="container-fluid">
                                     <div class="row paymentInfoRow">
@@ -145,10 +173,14 @@
                                             <span class="checkIcon" ><i class="fas fa-check-circle"></i></span> Seleccione el menu
                                         </div>
                                         <div class="col paymentInfo">
+                                                    <!--- ICONO WPP Y SU ORDEN SE TOMA POR WHATSAPP-->
+
                                             <span class="checkIcon"  ><i class="fa-brands fa-whatsapp"></i></span> Su orden se tomara por Whatsapp
                                         </div>
                                         <div class="col paymentInfo">
                                             <span class="checkIcon"><i class="fa-brands fa-google-pay"></i>
+
+                        <!---MODOS DE PAGO-->
 
                                             </span> Paga en efectivo o por MercadoPago
                                         </div>
@@ -156,15 +188,21 @@
 
                                     <hr style="color: black; width: 90%; margin: 15px auto" />
 
+                        <!---AVISO CARRITO VACIO-->
+
                                     <div class="cartContentDiv">
                                         <h1>Tu carrito esta vacio</h1>
                                     </div>
+                        
+                        <!---formulario para codigo de descuento-->
 
                                     <div class="userInfoDiv">
                                         <div class="mb-3 px-2">
                                             <label for="address">Codigo de descuento</label> <br />
                                             <textarea type="text" class="form-control" id="address"></textarea>
                                         </div>
+                        <!---formulario para nota adicional-->
+
                                         <div class="mb-3 px-2">
                                             <label for="note">nota adicional</label> <br />
                                             <textarea type="text" class="form-control" id="note"></textarea>
@@ -173,10 +211,16 @@
 
                                 </div>
                             </div>
+                                                    <!---footer de la ventana de compra-->
+
                             <div class="modal-footer">
                                 <div class="totalAmountDiv"></div>
-                                <button type="button" class="btn btn-secondary" onclick="location.reload()">Clear Cart</button>
-                                <a class="btn btn-primary" onclick="openWhatsapp()"> Order Now </a>
+                          <!---BOTON DE CLEAR CART-->
+
+                                <button type="button" class="btn btn-secondary" onclick="location.reload()">Cancelar</button>
+                          <!---BOTON DE ORDENAR AHORA-->
+
+                                <a class="btn btn-primary" onclick="openWhatsapp()"> Ordena ahora</a>
                             </div>
                         </div>
                     </div>
@@ -185,6 +229,7 @@
                 <div id="momos" style="display: none">
                     <div class="row menuHeading">
                         <div class="col-12">
+                
                             <h1>McDonalds</h1>
                         </div>
                         <span class="shoppingCart" data-toggle="modal" data-target="#exampleModal">

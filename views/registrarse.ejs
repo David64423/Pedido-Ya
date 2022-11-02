@@ -34,14 +34,14 @@
 
             <div id="registro" class="container">
 
-                    <form id="contenedorForm">
+                    <form method="post" action="/registro"id="contenedorForm">
                         <div id="formR">
                             <div id="inputTextos">
-                                    <input placeholder="Nombre" type="text">
-                                    <input placeholder="Apellido" type="text">
-                                    <input placeholder="Dirección" type="text">
-                                    <input placeholder="Correo" type="text">
-                                    <input placeholder="Contraseña" type="text">
+                                    <input placeholder="Nombre" name="nombre"type="text">
+                                    <input placeholder="Apellido" name="apellido"type="text">
+                                    <input placeholder="Dirección" name="direccion"type="text">
+                                    <input placeholder="Correo" name="correo"type="email">
+                                    <input placeholder="Contraseña" name="contraseña"type="password">
                             </div>
 
                             <div id="inputSubmit">

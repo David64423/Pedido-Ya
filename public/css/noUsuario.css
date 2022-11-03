@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/*   Lobster  */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+
+/* Pacifico    */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Luckiest+Guy&family=Pacifico&display=swap');
+
+/*    Luckiest Guy  */
+
+:root{
+    --bp:none;
+    --bf:1px solid black;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    border: var(--bp);
+}
+
+#headCompleto{
+    width: 100%;
+    height: 60vh;
+    border: var(--bp);
+    background-image: url(../img/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 130%;
+}
+
+.containers{
+    border: var(--bp);
+    width: 100%;
+    display: flex;
+}
+
+#menu{
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#containerBotomIniciarSesion{
+    height:80% ;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+}
+
+.elementoMenu{
+    height: 80%;
+    border: var(--bp);
+}
+
+#nombreLogo{
+    width: 25%;
+    display: flex;
+}
+
+#opcionesMenu{
+    width: 40%;
+}
+
+#subContainerBotomIniciarSesion{
+    height: 80%;
+    width: 20%;
+    border: var(--bp);
+}
+
+
+#EnviosTodoElPais{
+    width: 100%;
+    height: 70%;
+    border: var(--bp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster';
+    font-size: 2.5vw;
+    color: black;
+}
+
+
+#contenedorBotom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30%;
+    border: var(--bp);
+}
+
+#botom{
+    width: 80%;
+    height:70%;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-family: 'Pacifico';
+    font-size: 2.2vw;
+    cursor: pointer;
+}
+
+
+#containerLogo{
+    height: 100%;
+    width: 30%;
+    border: var(--bp);
+}
+
+#logo{
+    width:115%;
+    height: 120%;
+}
+#containerNombre{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    
+}
+#nombre{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3vw;
+}
+
+#opcionesMenu{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+
+.opciones{
+    height: 100%;
+    border: var(--bp);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+a:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+#contenedorDeRestaurantes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--bp);
+    height: 70vh;
+    background-color: #ff6c3e;
+}
+
+#restaurantes{
+    height: 80%;
+    width: 70%;
+    border: var(--bp);
+}
+
+#EmpresasqueTrabajanConNosotros{
+    border: var(--bp);
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+
+}
+
+#empresas{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logosEmpresas{
+    height: 80%;
+    width: 30%;
+}
+
+#mD{
+    width: 25%;
+}
+
+#bk{
+    width: 25%;
+}
+
+#aboutOf{
+    background-color: #ffa71e;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    }
+
+#allInformation{
+        width: 60%;
+        border: var(--bp);
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+    .containersInfo{
+        height: 100%;
+        width: 30%;
+        border: var(--bp);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nombres{
+        border: var(--bp);
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5vw;
+    }
+
+    .items{
+        text-decoration: none;
+        margin-left: 16%;
+        color: black;
+        font-size: 1.2vw;
+    }
+    
+    .items:hover{
+        text-decoration: underline;
+        margin-left: 25%;
+        color: red;
+    }
+
+    #paises{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100%;
+    }
+    
+    #selectPaises{
+        width: 120%;
+    
+    }
+
+#kfc{
+    width: 35%;
+}
+    

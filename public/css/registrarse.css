@@ -23,6 +23,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    
 }
 
 .container{
@@ -35,12 +36,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 #registro{
     height: 65%;
     display: flex;
     justify-content: center;
+    position: relative;
+bottom: 2%;
 }
 
 #aboutOf{

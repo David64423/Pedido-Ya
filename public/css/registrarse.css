@@ -18,7 +18,7 @@
 }
 
 #todoElRegistrase{
-    background-image: url(../img/fondoHamburguesa.jpg);
+    background-image: url(https://www.clarin.com/img/2021/06/17/LC25eDtCT_1256x620__1.jpg);
     background-size: 100% 80%; 
     background-repeat: no-repeat;
     width: 100%;
@@ -38,6 +38,8 @@
     align-items: center;
     position: relative;
     z-index: 2;
+    padding-bottom: 2%;
+    background-color: white;
 }
 
 #registro{
@@ -45,7 +47,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-bottom: 2%;
+    bottom: 2%;
 }
 
 #aboutOf{
@@ -60,12 +62,12 @@ justify-content: center;
 #contenedorForm{
     height: 100%;
     width: 40%;
-    border: var(--bf);
     display: flex;
     flex-direction: column;
     border-radius: 25px;
     background-color: #ffa71e;
     opacity: 85%;
+    margin-top: 2%;
     
 }
 
@@ -142,7 +144,6 @@ input{
     width: 92%;
     display: flex;
     justify-content: center;
-    
 }
 
 #subContenedorLogoNombre{

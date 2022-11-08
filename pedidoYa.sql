@@ -1,6 +1,5 @@
-show databases;
+create database pedidoYa;
 use pedidoYa;
-show tables;
 
 create table usuarios(
 usu_id int(2) primary key auto_increment,
@@ -27,7 +26,6 @@ rest_id int(3) primary key auto_increment,
 rest_descripcion varchar(30)
 );
 
-select * from restaurantes;
 
 insert into restaurantes values (null,"KFC");
 
@@ -50,8 +48,3 @@ primary key (ped_id, usu_id,menu_id),
 foreign key (usu_id) references usuarios(usu_id),
 foreign key (menu_id) references menu(menu_id)
 );
-
-show tables;
-create table 
-
-drop table pedidos_T;

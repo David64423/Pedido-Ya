@@ -16,12 +16,12 @@ app.use(projectsRoutes);
 //app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.get('/',(req,res)=>{
-    res.render("loggin");
+app.get('/addComida',(req,res)=>{
+    res.render("agregarComida");
 })
 
 app.get('/index.ejs',(req,res)=>{
-    res.render("registrarse");
+    res.render("index");
 })
 
 export default app;

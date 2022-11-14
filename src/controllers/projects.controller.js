@@ -1,20 +1,18 @@
-//import {Project} from './../models/project.js';
+import {Restaurantes} from './../models/restaurantes.js';
 
 export const getProjects = (req, res)=>{
     res.send('getting projects');
 }
 
 
-export const createProject = async (req, res)=>{
-   // const {name, priority, description} = req.body;
+export const addRestaurant = async (req, res)=>{
+    const {rest_descripcion} = req.body;
 
-/*const newProject=await Project.create({
-        name,
-        priority,
-        description: description
+const newRestaurant=await Restaurantes.create({
+        rest_descripcion
     })
 
-    console.log(newProject); */
+    console.log(newRestaurant); 
 
     res.send('creating projects');
 }

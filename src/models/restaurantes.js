@@ -3,7 +3,7 @@ import {sequelize} from '../database/database.js';
 
 import {Menu} from './menu.js';
 
-const Restaurantes=sequelize.define('restaurantes',{
+export const Restaurantes=sequelize.define('restaurantes',{
     rest_id:{
         type: DataTypes.INTEGER,
         primaryKey:true,

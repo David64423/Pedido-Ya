@@ -4,7 +4,7 @@ import {sequelize} from '../database/database.js';
 import {Usuarios} from './usuarios.js';
 import {Menu} from './menu.js';
 
-const Pedidos=sequelize.define('pedidos',{
+export const Pedidos=sequelize.define('pedidos',{
     ped_id:{
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -16,7 +16,13 @@ const Pedidos=sequelize.define('pedidos',{
     },
     ped_cantidad:{
         type: DataTypes.INTEGER,
-    }
+    }/*,
+    ped_usuario:{
+
+    },
+    ped_menu:{
+
+    }*/
 },{
     timestamps:false,
 });

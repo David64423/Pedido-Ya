@@ -1,7 +1,9 @@
 import {Router} from 'express';
-import {addRestaurant} from '../controllers/projects.controller.js';
+import {addRestaurant, addMenu} from '../controllers/projects.controller.js';
+import {urlencodedParser, jsonParser} from './../app.js';
 
 const router = Router();
+
 
 //router.get('/projects', getProjects) //Aca vamos a hacer que se puedan ver todos los proyectos
                                         /*Aqui le digo que cuando se vaya a esta ruta
@@ -13,18 +15,25 @@ const router = Router();
                                         se va a ejecutar la funcion que importe 
                                         "createProjects" */
 
-router.put('/projects/:id')//Cuando haga una ruta put es porque quiero actualizar un proyecto
 
 
-router.delete('/projects/:id')//Cuando haga una ruta delete es porque quiero eliminar un projecto
+router.post('/addPlato',
+addMenu
+);
 
-router.get('/projects/:id')//Esto es porque quiero obtener un solo proyecto
 
-router.post('/addRestaurante', addRestaurant);
 
-router.get('/addPlato',()=>{
-    console.log("Se agrega el plato");
-});
+router.get('/addComida',(req,res)=>{
+    res.render("agregarComida");
+})
+
+router.get('/contacto',(req,res)=>{
+    res.render("contacto");
+})
+
+router.get('/addRestaurant.ejs',(req,res)=>{
+    res.render("addRestaurant");
+})
 
 // router.get('/noUsuario',(req, res, next)={
 

@@ -10,7 +10,7 @@ let port=5000;
 
 async function  main(){
     try{
-        await sequelize.sync();
+        await sequelize.sync({alter:true});
          /* Este método hace una sincronizacion con la base de datos, es decir, 
                                 crea tablas, las elimina o/y las crea nuevamente,etc. */ /*Si no le
                                 pongo nada como parametro, va a crear las tablas de los archivos que impor-

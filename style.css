@@ -1,0 +1,59 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+} 
+.container{
+    height: 510px;
+    width: 25%;
+    box-shadow: 0 0 7px #111;
+    margin: 0 30px;
+}
+.cajaF{
+    margin: auto;
+    display: block;
+    height: 330px;
+    width: 330px;
+} 
+.bucket{
+    margin: auto;
+    display: block;
+    height: 330px;
+    width: 330px;
+} 
+.stacker{
+    margin: auto;
+    display: block;
+    height: 330px;
+    width: 330px;
+} 
+.informacion{
+    height: 80px;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: -10px;
+}
+.contenido{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 9em;
+    color: #555;
+}
+.precio{
+    height: 50px;
+    width: 85%;
+    margin: auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-prexio{
+    width: 80px;
+}
+.precio1{
+    font-size: 8em;
+}

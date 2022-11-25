@@ -49,3 +49,14 @@ export const addPedido = async (req, res)=>{
 
     res.send("Creating a new pedido");
 }
+
+
+
+export const getPedidos= async function(req,res){
+    const rest=await Restaurantes.findAll({
+        where:{
+            rest_id :3,
+        }
+    });
+    res.json(rest);
+}

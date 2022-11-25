@@ -2,7 +2,7 @@ import express from 'express';
 import projectsRoutes from './routes/projects.routes.js';
 import bodyParser from 'body-parser';
 
-import {addRestaurant, addMenu} from './controllers/projects.controller.js';
+import {addRestaurant, addMenu, getPedidos} from './controllers/projects.controller.js';
 
 
 const app= express();
@@ -17,6 +17,8 @@ app.use(projectsRoutes);
 
 app.post('/addRestaurante',urlencodedParser,addRestaurant
  /*, addRestaurant */);
+
+ app.get('/gg', urlencodedParser, getPedidos);
 
  app.use(express.static('public'));
 

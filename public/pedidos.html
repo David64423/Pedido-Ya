@@ -5,15 +5,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>menu</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/pedidos.css" />
 </head>
 
 <body>
   <script src="script.js"></script>
 
-<div class="container">
+  <form action="../confirmacionCompra" method="POST">
+    <select name="cliente" id="cliente">
+      <option value="Juan">Juan</option>
+      <option value="Ari">Ari</option>
+      <option value="Melanie">Melanie</option>
+      <option value="Jazmin">Jazmin</option>
+      <option value="Agustin">Agustin</option>
+    </select>
+
+
+    <input class="preguntas" type="text" name="restaurante">
+
+    <input class="preguntas" type="text" name="comida">
+
+    <input class="preguntas" type="text" name="precio">
+
+    <input type="submit" value="Enviar Pedido">
+
+  </form>
+
+  <div id="main">
+
+<div class="container" id="mc">
     <div class="containerImagen">
-            <img src="cajaF.jpeg" alt="">
+            <img src="img/cajaF.jpeg" alt="">
     </div>
     <div class="informacion">
       <h1>Cajita Feliz</h1>
@@ -24,13 +46,13 @@
             <p class="precio1">$/140</p>
             <p class="precio2">$/100</p>
         </div>
-            <img class="carrito" src="carrito.png">
+            <img class="carrito" src="img/carrito.png">
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="kfc">
   <div class="containerImagen">
-          <img src="kfc.jpg" alt="">
+          <img src="img/kfcc.jpg" alt="">
   </div>
   <div class="informacion">
   <h1>Bucket KFC</h1>
@@ -41,13 +63,13 @@
         <p class="precio1">$/120</p>
           <p class="precio2">$/90</p>
       </div>
-      <img class="carrito" src="carrito.png">
+      <img class="carrito" src="img/carrito.png">
   </div>
 </div>
 
-<div class="container">
+<div class="container" id="bk">
   <div class="containerImagen">
-          <img src="stackerBk.jpg" alt="">
+          <img src="img/stackerBk.jpg" alt="">
   </div>
   <div class="informacion">
   <h1>Stacker Cuadruple</h1>
@@ -58,10 +80,14 @@
         <p class="precio1">$/200</p>
           <p class="precio2">$/120</p>
       </div>
-      <img class="carrito" src="carrito.png">
+      <img class="carrito" src="img/carrito.png">
   </div>
 </div>
+</div>
 
+<script src="js/pedidos.js"></script>
 </body>
+
+
 
 </html>

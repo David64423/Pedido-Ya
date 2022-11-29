@@ -6,6 +6,7 @@ import './models/usuarios.js';
 import './models/menu.js';
 import './models/restaurantes.js';
 import './models/pedidos.js';
+import './models/pedidos.js';
 let port=5000;
 
 async function  main(){

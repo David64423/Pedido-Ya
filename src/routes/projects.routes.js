@@ -1,6 +1,6 @@
 import {Router} from 'express';
 import {addRestaurant, addMenu} from '../controllers/projects.controller.js';
-import {urlencodedParser, jsonParser} from './../app.js';
+//import {urlencodedParser, jsonParser} from './../app.js';
 
 const router = Router();
 

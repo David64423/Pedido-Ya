@@ -16,17 +16,17 @@
       <h1>Finalice su compra</h1>
       <form class="cf">
         <div class="half left cf">
-          <input type="text" id="input-name" placeholder="orden" />
-          <input type="email" id="input-email" placeholder="productos" />
-          <input type="text" id="input-subject" placeholder="precio" />
+          <input type="text" id="input-name" placeholder="cliente" value=<%= cliente %>>
+          <input type="text" maxlength=200 id="input-email" placeholder="empresa" value=<%= restaurante %>>
+          <input type="text" id="input-subject" placeholder="precio" value=<%=precio%> />
         </div>
         <div class="right cf">
           <textarea
-            name="empresa"
+            name="productos"
             type="text"
             id="input-message"
-            placeholder="empresa"
-          ></textarea>
+            placeholder="productos"
+          ><%=comida%></textarea>
         </div>
         <a href="https://www.whatsapp.com/?lang=es">finalizar compra via whatsapp</a>
       </form>

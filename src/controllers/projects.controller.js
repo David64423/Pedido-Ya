@@ -1,6 +1,7 @@
 import {Restaurantes} from './../models/restaurantes.js';
 import {Menu} from './../models/menu.js';
 import {Pedidos} from './../models/pedidos.js';
+import {PedidosS} from './../models/pedidosS.js';
 
 export const getProjects = (req, res)=>{
     res.send('getting projects');
@@ -59,4 +60,67 @@ export const getPedidos= async function(req,res){
         }
     });
     res.json(rest);
+}
+
+export const getPedidosSMC = async function(req, res){
+    const pedidosS= await PedidosS.findAll({
+        where:{
+            restaurante:1,
+        }
+    })
+
+    
+
+    console.log(pedidosS);
+
+    return PedidosS;
+}
+
+
+export const getPedidosSBK = async function(req, res){
+    const pedidosS= await PedidosS.findAll({
+        where:{
+            restaurante:2,
+        }
+    })
+
+    
+
+    console.log(pedidosS);
+
+    return PedidosS;
+}
+
+
+
+export const getPedidosSKFC = async function(req, res){
+    const pedidosS= await PedidosS.findAll({
+        where:{
+            restaurante:3,
+        }
+    })
+
+    
+
+    console.log(pedidosS);
+
+    return PedidosS;
+}
+
+
+
+export const addPedidoS = async (req, res)=>{
+    const {cliente, comida, cantidad, restaurante, precio} = req.body;
+
+    const newPedidoS= await PedidosS.create({
+        cliente,
+        comida,
+        cantidad,
+        restaurante,
+        precio
+    })
+
+    console.log(newPedidoS);
+
+    res.send("Creating a new pedidoS");
 }

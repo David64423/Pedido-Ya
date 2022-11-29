@@ -2,7 +2,7 @@ import express from 'express';
 import projectsRoutes from './routes/projects.routes.js';
 import bodyParser from 'body-parser';
 
-import {addRestaurant, addMenu, getPedidos, addPedidoS} from './controllers/projects.controller.js';
+import {addRestaurant, addMenu, getPedidos, addPedidoS, getPedidosSMC} from './controllers/projects.controller.js';
 
 
 const app= express();
@@ -20,6 +20,23 @@ app.post('/confirmacionCompra',urlencodedParser,(req,res)=>{
     res.render('orden.ejs',{cliente,restaurante,comida,precio});
     console.log(req.body);
 });
+
+app.post('/addPedido',urlencodedParser,(req, res)=>{
+    addPedidoS(req, res);
+});
+
+app.get('/verPedidosMc',urlencodedParser,(req,res)=>{
+   getPedidosSMC(req,res);
+   
+})
+
+app.get('/verPedidosBurgerKing',urlencodedParser,(req,res)=>{
+    
+})
+
+app.get('/verPedidosKFC',urlencodedParser,(req,res)=>{
+    
+})
 
 
 

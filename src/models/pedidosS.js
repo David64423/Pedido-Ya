@@ -13,9 +13,6 @@ cliente:{
 comida:{
     type: DataTypes.STRING,
 },
-cantidad:{
-    type: DataTypes.INTEGER,
-},
 restaurante:{
     type: DataTypes.STRING,
 },

@@ -63,9 +63,9 @@ export const getPedidos= async function(req,res){
 }
 
 export const getPedidosSMC = async function(req, res){
-    const pedidosS= await PedidosS.findAll({
+    let pedidosS= await PedidosS.findAll({
         where:{
-            restaurante:1,
+            restaurante:"McDonald",
         }
     })
 
@@ -73,14 +73,14 @@ export const getPedidosSMC = async function(req, res){
 
     console.log(pedidosS);
 
-    return PedidosS;
+    res.send(pedidosS);
 }
 
 
 export const getPedidosSBK = async function(req, res){
     const pedidosS= await PedidosS.findAll({
         where:{
-            restaurante:2,
+            restaurante:"Burger King",
         }
     })
 
@@ -96,7 +96,7 @@ export const getPedidosSBK = async function(req, res){
 export const getPedidosSKFC = async function(req, res){
     const pedidosS= await PedidosS.findAll({
         where:{
-            restaurante:3,
+            restaurante:"KFC",
         }
     })
 
@@ -110,14 +110,13 @@ export const getPedidosSKFC = async function(req, res){
 
 
 export const addPedidoS = async (req, res)=>{
-    const {cliente, comida, cantidad, restaurante, precio} = req.body;
+    const {cliente, comida,restaurante, precio} = req.body;
 
     const newPedidoS= await PedidosS.create({
         cliente,
-        comida,
-        cantidad,
         restaurante,
-        precio
+        precio,
+        comida
     })
 
     console.log(newPedidoS);

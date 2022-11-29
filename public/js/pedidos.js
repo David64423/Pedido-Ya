@@ -7,20 +7,20 @@ function main(){
     kfc.addEventListener('click',()=>{
         blanquear();
         kfc.style.backgroundColor="red";
-        rellenarFormulario(preguntas, ["Restaurante: KFC","Pedido: Bucket","Precio: 90.0"]);
+        rellenarFormulario(preguntas, ["KFC","Bucket",90.0]);
 
     })
 
     mc.addEventListener('click',()=>{
         blanquear();
         mc.style.backgroundColor="red";
-        rellenarFormulario(preguntas, ["Restaurante: McDonald","Pedido: Cajita Feliz","Precio: 100.0"]);
+        rellenarFormulario(preguntas, ["McDonald","Cajita Feliz",100.0]);
     })
 
     bk.addEventListener('click',()=>{
         blanquear();
         bk.style.backgroundColor="red";
-        rellenarFormulario(preguntas, ["Restaurante: Burger King","Pedido: Stacker Cuadruple","Precio: 120.0"]);
+        rellenarFormulario(preguntas, ["Burger King","Stacker Cuadruple",120.0]);
     })
 }
 

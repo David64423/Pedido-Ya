@@ -23,8 +23,9 @@
         width: 100%;
         height: 60vh;
         border: var(--bp);
+
         background-repeat: no-repeat;
-        background-size: 100% 130%;
+        background-size: 100% 1550%;
     }
     
     
@@ -38,7 +39,7 @@
         height: 20%;
         justify-content: space-between;
         align-items: center;
-        border: var(--bf);
+        border: var(--bp);
     }
     
     
@@ -210,5 +211,148 @@
         <% i++; } %>
     </table>
     </div>
+
+
+
+
+
+
+
+    <div id="aboutOf" class="containers">
+
+        <div id="allInformation">
+
+                <div class="containersInfo" id="sobreFlashi">
+                        <div class="nombres">
+                            <h2>Sobre Flashi</h2>
+
+                        </div>
+
+                        <div .links>
+
+                            <a class="items" href="">Contacto</a><br>
+                            <a class="items" href="">Politicas de Privacidad</a> <br>
+                            <a class="items" href="">Terminos y Condiciones</a>
+
+
+                        </div>
+
+                </div>
+
+                <div class="containersInfo" id="uneteFlashi">
+
+                    <div class="nombres">
+                        <h2>Unete a Flashi</h2>
+
+                    </div>
+
+                    <div .links>
+                            <a class="items" href="">Registra tu Restaurante</a><br>
+                            <a class="items" href="">Trabaja con Nosotros</a> <br>
+                            <a class="items" href="">Conviertete en Flashienvio</a>
+
+
+                    </div>
+
+                </div>
+
+                <div class="containersInfo" id="Paises">
+                    <div class="nombres">
+
+                        <h2>Paises</h2>
+                        
+
+                    </div>
+
+                    <div id="paises">
+                        <form>
+                            <select id="selectPaises">
+                                <option value="">Argentina</option>
+                                <option value="">Bolivia</option>
+                                <option value="">Paraguay</option>
+                                <option value="">Brasil</option>
+                                <option value="">Perú</option>
+                            </select>
+                        </form>
+
+
+                    </div>
+
+                </div>
+
+        </div>
+
+
+    </div>
+
+
+    <style>
+
+.containers{
+        border: var(--bp);
+        width: 100%;
+        display: flex;
+    }
+        #aboutOf{
+    background-color: #ffa71e;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    }
+
+#allInformation{
+        width: 60%;
+        border: var(--bp);
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+    .containersInfo{
+        height: 100%;
+        width: 30%;
+        border: var(--bp);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #paises{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100%;
+    }
+    
+    #selectPaises{
+        width: 120%;
+    
+    }
+
+    .items{
+        text-decoration: none;
+        margin-left: 16%;
+        color: black;
+        font-size: 1.2vw;
+    }
+    
+    .items:hover{
+        text-decoration: underline;
+        margin-left: 25%;
+        color: red;
+    }
+
+    .nombres{
+        border: var(--bp);
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5vw;
+    }
+    </style>
 </body>
 </html>

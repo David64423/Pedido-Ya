@@ -1,5 +1,7 @@
 *{
   font-family: "Ubuntu", sans-serif;
+  padding: 0%;
+  margin: 0%;
 }
 /*imagen de fondo*/
 body {
@@ -7,6 +9,23 @@ body {
 ;
 background-image: url(/public/img/madera.jpg);
 }
+#flashifooter {
+  color: white;
+  font-family:sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  font-size :56px;
+  font-family: 'Urbanist', sans-serif;
+
+}
+
+#flashititle{ color: rgb(12, 0, 0);
+  font-family:sans-serif;
+  font-weight: 600;
+  font-size: 56px ;
+  font-family: 'Urbanist', sans-serif;
+}
+
 
 @font-face  {
   font-family: myFirstFont;
@@ -25,10 +44,7 @@ a:hover {
   cursor: pointer;
 }
 
-.container {
- 
-  padding: 0;
-}
+
 
 .row {
   width: 100%;
@@ -123,7 +139,7 @@ a:hover {
 
 .homeBtn {
   font-size: 4.2rem;
-  border-radius: 30%;
+  border-radius: 20%;
   background-color: none;
   color: rgba(243, 219, 7, 0.8);
 }
@@ -134,15 +150,10 @@ a:hover {
 box-shadow: 10px 33px 106px 0px rgba(40,219,75,1);
 padding: 30px 50px 30px 50px;
 }
-.homeImgCol {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .homeImg {
-  padding-top: 50px;
-  width: 100%;
-  
+ 
+  padding-top: 40%;
 }
 
 .homeImg:hover {
@@ -158,7 +169,7 @@ padding: 30px 50px 30px 50px;
 #categorySection {
   padding-top: 1%;
   background-color: #26834a;
-  padding-bottom: 6%;
+  padding-bottom: 0%;
  background-color: #e7e1e1;
 }
 /*cuadro blanco trasero (mcdonals, burguer king y kfc)*/
@@ -474,14 +485,16 @@ textarea#address, textarea#note {
   margin-top: 10px;
 }
 
-.h2 {
-  color: #ffc107;
-}
 
 footer {
-  background-color: #0d1010;
-  color: #ebc040;
-  padding: 3% 0 2% 0;
+  background-color: rgb(0, 0, 0);
+height: 80%;
+position: relative;
+display: flex;
+justify-content: center;
+color:#fdfdfdd0;
+padding: 5%;
+
 }
 
 .footerHeadingCol {
@@ -664,9 +677,8 @@ footer a {
     width: 97%;
     height: 100%;
   }
-  #categorySection {
-    padding: 1% 10px 5%;
-  }
+
+
   .product-box-layout4 .item-figure {
     height: 200px;
   }
@@ -728,7 +740,7 @@ footer a {
 @media screen and (max-width: 1000px){
   .homeHeading{
     text-align: center;
-  }
+  }}
   .homeBtn{
     display: flex;
     justify-content: center;
@@ -746,16 +758,11 @@ footer a {
     width: 244px;
     height: 229px;
   }
-  #categorySection{
-    width: 145vw;
-  }
+  
   #healthySection{
     width: 145vw;
   }
-  #footer{
-    width: 145vw;
-  }
-}
+
 /* ICONOS DE PEDIDO */
 .checkIcon {
   color:rgb(126, 128, 0);
@@ -763,4 +770,20 @@ footer a {
 
 .card-title{
   color: rgb(0, 0, 0);
+}
+#flashifooter {
+  color: white;
+  font-family:sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  font-size :56px;
+  font-family: 'Urbanist', sans-serif;
+
+}
+
+#flashititle{ color: rgb(12, 0, 0);
+  font-family:sans-serif;
+  font-weight: 600;
+  font-size: 56px ;
+  font-family: 'Urbanist', sans-serif;
 }

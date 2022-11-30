@@ -2,7 +2,7 @@ import express from 'express';
 import projectsRoutes from './routes/projects.routes.js';
 import bodyParser from 'body-parser';
 
-import {addRestaurant, addMenu, getPedidos, addPedidoS, getPedidosSMC,getPedidosSKFC,getPedidosSBK} from './controllers/projects.controller.js';
+import {addRestaurant, addMenu,  addPedidoS, getPedidosSMC,getPedidosSKFC,getPedidosSBK} from './controllers/projects.controller.js';
 
 
 const app= express();
@@ -25,7 +25,7 @@ app.post('/addPedido',urlencodedParser,async (req, res)=>{
     
     addPedidoS(req, res);
     
-        res.render('PedidoHecho.ejs');
+        
     
 });
 
@@ -47,7 +47,7 @@ app.get('/verPedidosKFC',urlencodedParser,(req,res)=>{
 
 
 
- app.get('/gg', urlencodedParser, getPedidos);
+ //app.get('/gg', urlencodedParser, getPedidos);
 
  app.use(express.static('public'));
 

@@ -114,5 +114,5 @@ export const addPedidoS = async (req, res)=>{
 
     console.log(newPedidoS);
 
-    res.send("Creating a new pedidoS");
+    res.render('PedidoHecho.ejs');
 }

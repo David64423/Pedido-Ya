@@ -5,9 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "prueba": "npx nodemon index.js",
-    "bd": "npx nodemon src/index.js"
+    "start": "npx nodemon src/index.js"
   },
   "dependencies": {
     "body-parser": "^1.20.1",

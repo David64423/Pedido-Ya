@@ -73,7 +73,7 @@ export const getPedidosSMC = async function(req, res){
 
     console.log(pedidosS);
 
-    res.send(pedidosS);
+    res.render('mostrarPedidos.ejs',{pedidosS});
 }
 
 
@@ -88,7 +88,7 @@ export const getPedidosSBK = async function(req, res){
 
     console.log(pedidosS);
 
-    return PedidosS;
+    res.render('mostrarPedidos.ejs',{pedidosS});
 }
 
 
@@ -104,7 +104,7 @@ export const getPedidosSKFC = async function(req, res){
 
     console.log(pedidosS);
 
-    return PedidosS;
+    res.render('mostrarPedidos.ejs',{pedidosS});
 }
 
 

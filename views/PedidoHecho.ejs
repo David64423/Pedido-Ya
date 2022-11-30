@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+:root{
+    --bp: none;
+    --bf: 1px solid black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+#headCompleto{
+    width: 100%;
+    height: 60vh;
+    border: var(--bp);
+    background-repeat: no-repeat;
+    background-size: 100% 130%;
+}
+
+
+.containers{
+    border: var(--bp);
+    width: 100%;
+    display: flex;
+}
+
+#menu{
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
+    border: var(--bf);
+}
+
+
+.elementoMenu{
+    height: 80%;
+    border: var(--bp);
+}
+
+#nombreLogo{
+    width: 25%;
+    display: flex;
+}
+
+#opcionesMenu{
+    width: 40%;
+}
+
+#containerLogo{
+    height: 100%;
+    width: 30%;
+    border: var(--bp);
+}
+
+#logo{
+    width:115%;
+    height: 120%;
+}
+#containerNombre{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    
+}
+#nombre{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3vw;
+}
+
+#opcionesMenu{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+
+.opciones{
+    height: 100%;
+    border: var(--bp);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+a:hover{
+    color: red;
+    transform: scale(1.2);
+}
+</style>
+<body>
+    <div id="headCompleto">
+
+        <div id="menu" class="containers">
+
+                <div id="nombreLogo" class="elementoMenu">
+
+                        <div id="containerLogo">
+                            <img id="logo" src="img/logo.png" alt="">
+
+
+                        </div>
+
+
+                        <div id="containerNombre">
+
+                            <h2 id="nombre">Flashi</h2>
+
+
+                        </div>
+
+
+                </div>
+
+
+
+                <div id="opcionesMenu" class="elementoMenu">
+
+                        <div class="opciones">
+                           <a class="opcion" href="/"><h2 >Inicio</h2></a>
+
+
+                        </div>
+
+
+                        <div class="opciones">
+                            <a class="opcion" href="contacto.html"><h2 >Contacto</h2></a>
+
+                        </div>
+
+
+                        <div  class="opciones">
+
+                            <a class="opcion" href="term_of_service.html"><h2 >Terminos y Condiciones</h2></a>
+
+                        </div>
+
+
+
+                </div>
+
+
+
+
+        </div>
+
+        <style>
+            #mensajePulgar{
+                margin-top: 5vh;
+                border: var(--bp);
+                height: 20vw;
+                width:100vw;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            #mens{
+                align-self: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: red;
+                font-size: 2vw;
+            }
+            
+        </style>
+
+        <div id="mensajePulgar">
+
+                    <div id="mens">
+                        <h1>Pedido Subido Con Exito</h1>
+                    </div>
+
+
+                    <img src="img/pulgar.png" alt="">
+
+
+        </div>
+</body>
+</html>

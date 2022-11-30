@@ -21,13 +21,12 @@ app.post('/confirmacionCompra',urlencodedParser,(req,res)=>{
     console.log(req.body);
 });
 
-app.post('/addPedido',urlencodedParser,(req, res)=>{
-    try{
+app.post('/addPedido',urlencodedParser,async (req, res)=>{
+    
     addPedidoS(req, res);
-    }
-    finally{
+    
         res.render('PedidoHecho.ejs');
-    }
+    
 });
 
 app.get('/verPedidosMc',urlencodedParser,(req,res)=>{

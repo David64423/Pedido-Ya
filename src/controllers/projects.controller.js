@@ -53,14 +53,7 @@ export const addPedido = async (req, res)=>{
 
 
 
-export const getPedidos= async function(req,res){
-    const rest=await Restaurantes.findAll({
-        where:{
-            rest_id :3,
-        }
-    });
-    res.json(rest);
-}
+
 
 export const getPedidosSMC = async function(req, res){
     let pedidosS= await PedidosS.findAll({

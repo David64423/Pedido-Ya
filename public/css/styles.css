@@ -16,7 +16,6 @@ background-image: url(/public/img/madera.jpg);
   font-size: 3rem;
   font-size :56px;
   font-family: 'Urbanist', sans-serif;
-
 }
 
 #flashititle{ color: rgb(12, 0, 0);
@@ -770,20 +769,4 @@ footer a {
 
 .card-title{
   color: rgb(0, 0, 0);
-}
-#flashifooter {
-  color: white;
-  font-family:sans-serif;
-  font-weight: 600;
-  font-size: 3rem;
-  font-size :56px;
-  font-family: 'Urbanist', sans-serif;
-
-}
-
-#flashititle{ color: rgb(12, 0, 0);
-  font-family:sans-serif;
-  font-weight: 600;
-  font-size: 56px ;
-  font-family: 'Urbanist', sans-serif;
 }

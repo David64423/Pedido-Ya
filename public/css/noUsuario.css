@@ -19,6 +19,7 @@
     padding: 0;
     margin: 0;
     box-sizing:border-box ;
+    font-family: sans-serif;
 }
 
 main{
@@ -31,9 +32,10 @@ main{
     width: 100%;
     height: 60vh;
     border: var(--bp);
-    background-image: url(../img/pizza.jpg);
+  
     background-repeat: no-repeat;
     background-size: 100% 130%;
+    
 }
 
 .containers{
@@ -49,10 +51,12 @@ main{
 }
 
 #containerBotomIniciarSesion{
-    height:80% ;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 10%;
+    background-image: url(/public/img/chiken.webp);
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+    padding: 8%;
+    
 }
 
 .elementoMenu{
@@ -67,6 +71,7 @@ main{
 
 #opcionesMenu{
     width: 40%;
+    background-color: azure;
 }
 
 #subContainerBotomIniciarSesion{
@@ -85,7 +90,7 @@ main{
     align-items: center;
     font-family: 'Lobster';
     font-size: 2.5vw;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -101,7 +106,7 @@ main{
     width: 80%;
     height:70%;
     border-radius: 50px;
-    background-color: red;
+    background-color: rgb(255, 145, 0);
     color: white;
     font-family: 'Pacifico';
     font-size: 2.2vw;
@@ -128,8 +133,11 @@ main{
     
 }
 #nombre{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3vw;
+   color: rgb(12, 0, 0);
+        font-weight: 600;
+        font-size: 56px ;
+        font-family: 'Urbanist', sans-serif;
+      }
 }
 
 #opcionesMenu{
@@ -159,7 +167,7 @@ a{
 }
 
 a:hover{
-    color: white;
+    color: rgb(252, 2, 2);
     transform: scale(1.2);
 }
 
@@ -169,7 +177,7 @@ a:hover{
     align-items: center;
     border: var(--bp);
     height: 70vh;
-    background-color: #ff6c3e;
+    background-color: #f8f1ef;
 }
 
 #restaurantes{
@@ -192,27 +200,33 @@ a:hover{
     height: 75%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+   
 }
 
 .logosEmpresas{
-    height: 80%;
-    width: 30%;
+    height: 100%;
+    width: 100%;
+  padding-right: 8%;
 }
 
-#mD{
+/* #mD{
     width: 25%;
 }
 
 #bk{
-    width: 25%;
+    width: 45%;
 }
+#kfc{
+    width: 45%;
+} */
 
 #aboutOf{
-    background-color: #ffa71e;
-    height: 50%;
-    display: flex;
-    justify-content: center;
+    background-color: #000000;
+    height: 20%;
+    display:flex;
+    justify-content:center;
+    color: white;
+    padding: 8%;
     }
 
 #allInformation{
@@ -228,7 +242,7 @@ a:hover{
         width: 30%;
         border: var(--bp);
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
     }
     
     .nombres{
@@ -240,19 +254,20 @@ a:hover{
         align-items: flex-end;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5vw;
+        padding: 1%;
     }
 
     .items{
         text-decoration: none;
-        margin-left: 16%;
-        color: black;
+        margin-left: 10%;
+        color: rgb(255, 255, 255);
         font-size: 1.2vw;
     }
     
     .items:hover{
         text-decoration: underline;
         margin-left: 25%;
-        color: red;
+        color: rgb(235, 142, 21);
     }
 
     #paises{
@@ -270,4 +285,19 @@ a:hover{
 #kfc{
     width: 35%;
 }
-    
+#proximamente{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.title{background-color: #000000;
+color: white;
+padding: 2%;
+font-size: 310%;
+-webkit-border-radius: 23px;
+-moz-border-radius: 23px;
+border-radius: 23px;
+margin-bottom: 12%;
+margin-top: 8%;
+}
